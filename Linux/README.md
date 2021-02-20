@@ -25,42 +25,6 @@ Linux 学习：
 
 
 
-<br>
-
-### 打 `deb` 包 
-
-使用 `dh_make`命令， 参考： https://github.com/gatieme/AderXCoding/tree/master/system/tools/build_deb
-
-
-
-```bash
-sudo apt install debhelper devscripts # 一大堆集合，类似于 base 包，带有 dh_make 包
-
-修改文件名（文件名格式：必须`字母纯小写`，`0~9`，`+`  `-`  `.` ）
-修改对应 debian 目录
-dh_make --createorig  # 生成 .tar.xz
-dpkg-buildpackage -b -rfakeroot -us -uc -d #不签名
-
--b, --build=binary          binary-only, no source files.
--nc, --no-pre-clean         do not pre clean source tree (implies -b).
-     --pre-clean             pre clean source tree (default).
-     --no-post-clean         do not post clean source tree (default).
--uc, --unsigned-changes     unsigned .buildinfo and .changes file.
-     --no-sign               do not sign any file.
-     --force-sign            force signing the resulting files.
-     --admindir=<directory>  change the administrative directory.
--us, --unsigned-source      unsigned source package.
- -d, --no-check-builddeps   do not check build dependencies and conflicts.
-     --ignore-builtin-builddeps
-                            do not check builtin build dependencies.
-```
-
-
-
-```bash
-g++ cmake libqt5*-dev libdtk{core,widget,gui}-dev dde-dock-dev
-```
-
 
 
 ## DDE
