@@ -10,6 +10,7 @@
 
 - [C语言中文网](http://c.biancheng.net/view/3866.html)  基于 Qt 5.9 LTS 系列教程
 - [Qt编程指南  奇先生:](https://qtguide.ustclug.org/) 基于 Qt 5.4.0 系列教程
+- [Qt 快速入门](http://shouce.jb51.net/qt-beginning/52.html) yafeilinux: 基于Qt 4，2009 年
 
 
 
